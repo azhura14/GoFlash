@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Line 1 -->
+    <LinearLayout
+        android:id="@+id/linear_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_custom_progress_dialog_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <include
+                layout="@layout/view_custom_progress_dialog_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_custom_progress_dialog_home_nonconnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <include
+                layout="@layout/view_custom_progress_dialog_no_connection" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="12dp"
+            android:id="@+id/view2"
+            android:background="#012D5A"
+            >
+            <LinearLayout
+                android:background="#012D5A"
+                android:id="@+id/id_linear_layout_get_rekap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_pemasaran2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total OS :"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="NPL :"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/id_npl_persen"
+                            android:textStyle="normal"
+                            android:paddingLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="100"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:paddingLeft="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="%"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="DPK :"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/id_dpk_persen"
+                            android:textStyle="normal"
+                            android:paddingLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="100"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:paddingLeft="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="%"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/text_realisasi"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Realisasi bln :"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_prakarsa2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rp."
+                            android:textSize="13sp" />
+                        <TextView
+                            android:layout_weight="4"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:id="@+id/id_txt_total_os"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rp."
+                            android:textSize="13sp" />
+                        <TextView
+                            android:layout_weight="4"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:id="@+id/id_txt_npl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="normal"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rp."
+                            android:textSize="13sp" />
+                        <TextView
+                            android:layout_weight="4"
+                            android:id="@+id/id_txt_dpk"
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="normal"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rp."
+                            android:textSize="13sp" />
+                        <TextView
+                            android:layout_weight="4"
+                            android:textColor="@color/white"
+                            android:id="@+id/id_txt_realisasi"
+                            android:textStyle="normal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_prakarsa3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:id="@+id/id_txt_total_os_deb"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:paddingLeft="2dp"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:text="Deb"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:id="@+id/id_txt_npl_deb"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:paddingLeft="2dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Deb"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#012D5A"
+                            android:textStyle="normal"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/id_txt_total_os_deb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            android:textSize="13sp" />
+                        <TextView
+                            android:textColor="#012D5A"
+                            android:textStyle="normal"
+                            android:paddingLeft="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="."
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:id="@+id/id_txt_realisasi_deb"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                        <TextView
+                            android:paddingLeft="2dp"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:layout_height="wrap_content"
+                            android:text="Deb"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_pemasaran"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageOption1"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_pemasaran" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Pemasaran"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_60_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_prakarsa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_prakarsa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Prakarsa"/>
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_30_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_pembinaan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_pembinaan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Pembinaan"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/grey_30_percent" />-->
+
+        <!-- line 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_penagihan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_penagihan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Penagihan"/>
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_30_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_pengelolaan_agunan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_pengelolaanagunan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:text="Pengelolaan Agunan"/>
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_30_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_pick_up_trx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/ic_pick_up_trx" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Pick Up Trx"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/grey_30_percent" />-->
+
+        <!-- Line 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_maps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_maps" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Maps"/>
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_30_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_akad_kredit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageOption8"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_akadkredit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Akad Kredit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_monitoring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_monitoring" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Monitoring"/>
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey_30_percent" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_lainnya" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:text="Lainnya"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_restrukturisasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/ic_home_restrukturisasi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:text="Restrukturisasi"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/grey_60_percent" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

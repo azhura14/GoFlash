@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@android:color/transparent" >
+
+                    <com.example.goflash.font.MaterialDesignIconsTextView
+                        android:id="@+id/prev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="0"
+                        android:background="@drawable/selector_dialog_media"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:padding="0dp"
+                        android:text="@string/material_arrow_left"
+                        android:textColor="@color/material_purple_100"
+                        android:textSize="20sp"
+                        app:typeface="robotoMedium" />
+                    <com.example.goflash.font.MaterialDesignIconsTextView
+                        android:id="@+id/pos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="0dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="6sp" />
+                    <com.example.goflash.font.MaterialDesignIconsTextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:minWidth="80dp"
+                        android:padding="0dp"
+                        android:text="@string/material_arrow_right"
+                        android:textColor="@color/material_purple_100"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_300"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="CHECK-IN"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--<GridView
+            android:id="@+id/grid_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3">
+        </GridView>-->
+
+        <!-- Check-In Menu -->
+        <include layout="@layout/fragment_new_checkin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_300"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="FITUR LAIN"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Fitur Lain Menu -->
+        <include
+            android:id="@+id/fragment_new_fitur_lain"
+            layout="@layout/fragment_new_fitur_lain" />
+
+        <!--<ListView
+            android:id="@+id/lv_produktif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />-->
+
+        <!--<TableLayout
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+                <Button
+                    android:id="@+id/check_in"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner"
+                    android:drawableTop="@drawable/ic_checkin"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:text="@string/hm_checkin"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner_shadow"
+                    android:drawableTop="@drawable/ic_reporting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/hm_reporting"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+                &lt;!&ndash;<Button&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/sales_kit"&ndash;&gt;
+                    &lt;!&ndash;android:textAllCaps="false"&ndash;&gt;
+                    &lt;!&ndash;android:textAlignment="center"&ndash;&gt;
+                    &lt;!&ndash;android:background="@drawable/curvy_corner"&ndash;&gt;
+                    &lt;!&ndash;android:drawableTop="@drawable/ic_reporting"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_margin="3dp"&ndash;&gt;
+                    &lt;!&ndash;android:padding="5dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+                    &lt;!&ndash;android:text="@string/hm_sales_kit"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="17sp"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="@color/white"/>&ndash;&gt;
+                <Button
+                    android:id="@+id/remind"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner"
+                    android:drawableTop="@drawable/ic_reminder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/hm_reminder"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/daily_act"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner"
+                    android:drawableTop="@drawable/ic_dailyact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/hm_dailyact"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner_shadow"
+                    android:drawableTop="@drawable/ic_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/hm_info"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"/>
+                &lt;!&ndash;<Button&ndash;&gt;
+                    &lt;!&ndash;android:textAllCaps="false"&ndash;&gt;
+                    &lt;!&ndash;android:textAlignment="center"&ndash;&gt;
+                    &lt;!&ndash;android:background="@drawable/curvy_corner_shadow"&ndash;&gt;
+                    &lt;!&ndash;android:drawableTop="@drawable/ic_reporting"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_margin="3dp"&ndash;&gt;
+                    &lt;!&ndash;android:padding="5dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+                    &lt;!&ndash;android:text="@string/hm_sales_kit"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="17sp"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="@color/white"/>&ndash;&gt;
+                <Button
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:background="@drawable/curvy_corner_shadow"
+                    android:drawableTop="@drawable/ic_productknow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/hm_productknow"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </TableRow>>
+        <TableRow>
+            <Button
+                android:id="@+id/presensi"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:background="@drawable/curvy_corner_shadow"
+                android:drawableTop="@drawable/ic_absensi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:text="@string/hm_absensi"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </TableRow>
+        </TableLayout-->
+    </LinearLayout>
+</ScrollView>

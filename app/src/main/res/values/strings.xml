@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Go Flash</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="material_point_full"><![CDATA[&#xE3FA;]]></string>
+    <string name="material_point_blank"><![CDATA[&#xE836;]]></string>
+    <string name="material_arrow_down">&#xE313;</string>
+    <string name="material_arrow_left">&#xE314;</string>
+    <string name="material_arrow_right">&#xE315;</string>
+    <string name="material_arrow_up">&#xE316;</string>
+    <string name="material_cloud">&#xE2BD;</string>
+    <string name="material_cloud_circle">&#xE2BE;</string>
+    <string name="material_cloud_done">&#xE2BF;</string>
+    <string name="material_cloud_download">&#xE2C0;</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="lorem_ipsum_short">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
 </resources>
